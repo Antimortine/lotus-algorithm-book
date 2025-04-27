@@ -2,7 +2,7 @@
 site_name: "Лотосовый Алгоритм"
 site_url: "https://Antimortine.github.io/lotus-algorithm-book"
 site_author: "Antimortine"
-site_description: "Читайте онлайн роман Лотосовый Алгоритм (Автор: Antimortine)"
+site_description: "Лотосовый Алгоритм: философский техно-триллер об ИИ, обученном на буддизме. Достиг ли он просветления, или это симуляция? Роман Antimortine (Андрей Копнин)."
 
 # Ссылка на репозиторий (отобразится иконка GitHub)
 repo_url: "https://github.com/Antimortine/lotus-algorithm-book/"
@@ -57,7 +57,12 @@ nav:
   - 'Введение': 'index.md'
   - 'Глава 1: Эхо в Проводах': 'Глава 1_ Эхо в Проводах.md'
 
-
-# Плагины (если нужны дополнительные функции, например поиск)
-# plugins:
-#   - search # Встроенный поиск (уже включен в Material)
+plugins:
+  - search # Встроенный поиск MkDocs
+  - sitemap # Генератор sitemap.xml
+  - minify: # Оптимизация HTML/JS/CSS
+      minify_html: true
+      minify_js: true
+      minify_css: true
+      htmlmin_opts:
+          remove_comments: true
