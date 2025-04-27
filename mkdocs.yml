@@ -1,0 +1,63 @@
+# Информация о сайте
+site_name: "Лотосовый Алгоритм"
+site_url: "https://Antimortine.github.io/lotus-algorithm-book"
+site_author: "Antimortine"
+site_description: "Читайте онлайн роман Лотосовый Алгоритм (Автор: Antimortine)"
+
+# Ссылка на репозиторий (отобразится иконка GitHub)
+repo_url: "https://github.com/Antimortine/lotus-algorithm-book/"
+repo_name: "lotus-algorithm-book"
+edit_uri: ""
+
+# Конфигурация темы Material
+theme:
+  name: material
+  language: ru # Язык интерфейса темы (кнопки, поиск и т.д.)
+  palette:
+    # Цветовая схема
+    scheme: slate   # Темная тема
+    primary: blue   # Основной цвет акцентов
+    accent: light blue  # Второстепенный цвет акцентов
+  favicon: favicon/favicon.ico # Путь к фавиконке
+  logo: favicon/favicon.svg # Путь к лого
+  features:
+    - navigation.tabs # Показать разделы верхнего уровня как вкладки
+    # - navigation.tabs.sticky # Сделать вкладки "липкими" при прокрутке
+    - navigation.sections # Группировка страниц в боковой панели
+    - navigation.expand # Автоматически разворачивать активные разделы
+    - navigation.top # Кнопка "Наверх"
+    - search.suggest # Подсказки при поиске
+    - search.highlight # Подсветка найденных слов
+    - content.code.annotate # Возможность добавлять аннотации к коду
+    - content.code.copy # Кнопка копирования для блоков кода
+    - toc.integrate # Интегрировать оглавление страницы в боковую панель
+
+# Расширения Markdown (очень важно для функциональности)
+markdown_extensions:
+  - admonition # Блоки Note, Warning, Tip и т.д. (!!! note "Заголовок")
+  - pymdownx.details # Сворачиваемые блоки (???+ note "Заголовок")
+  - pymdownx.superfences # Улучшенные блоки кода (позволяет вкладывать блоки)
+  - pymdownx.highlight: # Подсветка синтаксиса
+      anchor_linenums: true # Ссылки на номера строк
+      line_spans: __span # Обертка строк для стилизации
+      pygments_lang_class: true # Добавлять класс языка к блоку
+  - pymdownx.inlinehilite # Подсветка кода внутри строки (`code`)
+  - pymdownx.snippets # Вставка контента из других файлов
+  - toc:
+      permalink: true # Добавлять якорные ссылки к заголовкам (¶)
+      toc_depth: 3 # Глубина заголовков в оглавлении на странице (H1-H3)
+  - pymdownx.tabbed: # Вкладки внутри страницы
+      alternate_style: true
+  - attr_list # Добавление атрибутов к элементам (полезно для стилизации)
+  - md_in_html # Разрешить Markdown внутри HTML-тегов
+  - footnotes
+
+# Навигация
+nav:
+  - 'Введение': 'index.md'
+  - 'Глава 1: Эхо в Проводах': 'Глава 1_ Эхо в Проводах.md'
+
+
+# Плагины (если нужны дополнительные функции, например поиск)
+# plugins:
+#   - search # Встроенный поиск (уже включен в Material)
