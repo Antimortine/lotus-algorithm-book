@@ -18,8 +18,8 @@ theme:
     scheme: slate   # Темная тема
     primary: blue   # Основной цвет акцентов
     accent: light blue  # Второстепенный цвет акцентов
-  favicon: favicon/favicon.ico # Путь к фавиконке
-  logo: favicon/favicon.svg # Путь к лого
+  favicon: favicon/favicon.ico  # Указываем путь к .ico файлу
+  logo: favicon/favicon.svg     # Указываем путь к .svg файлу
   features:
     - navigation.tabs # Показать разделы верхнего уровня как вкладки
     # - navigation.tabs.sticky # Сделать вкладки "липкими" при прокрутке
@@ -59,7 +59,6 @@ nav:
 
 plugins:
   - search # Встроенный поиск MkDocs
-  - sitemap # Генератор sitemap.xml
   - minify: # Оптимизация HTML/JS/CSS
       minify_html: true
       minify_js: true
